@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gerador de 256 dados aleatórios com resultados entre 1 e 6.">
+  <title>Gerador de Números Aleatórios</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Gerador de Números Aleatórios</h1>
+      <p class="subtitle">256 dados que giram e revelam um lado entre 1 e 6.</p>
+    </header>
+
+    <main>
+      <section class="panel controls" aria-labelledby="controls-title">
+        <h2 id="controls-title" class="visually-hidden">Controlos</h2>
+        <div class="button-group">
+          <button type="button" id="generate-btn" class="btn btn-primary">Rolar 256 Dados</button>
+          <button type="button" id="copy-btn" class="btn btn-secondary" disabled>Copiar valores</button>
+          <button type="button" id="clear-btn" class="btn btn-ghost" disabled>Limpar resultados</button>
+        </div>
+        <p id="status" class="status" role="status" aria-live="polite">Pronto para rolar os dados.</p>
+      </section>
+
+      <section class="panel" aria-labelledby="dice-title">
+        <h2 id="dice-title">Dados gerados</h2>
+        <div id="numbers-grid" class="numbers-grid" role="group" aria-label="Dados gerados">
+          <p class="empty-message">Clique em &laquo;Rolar 256 Dados&raquo; para come&ccedil;ar.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
